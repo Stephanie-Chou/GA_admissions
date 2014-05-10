@@ -4,11 +4,14 @@ body{
 	color:#fff;
 }
 
+.wrapper{
+	width:900px;
+	margin: 0px auto;
+}
+
 h1{
 	font-size: 4em;
 	text-align: center;
-
-
 }
 
 h2{
@@ -16,8 +19,47 @@ h2{
 }
 
 p{
-	font-size: 1em;
+	font-size: 1.666em;
 
+}
+
+.imgMe{
+	display: block;
+	bottom:0px;
+}
+
+.imgMe img{
+	height: 50%;
+}
+
+.BotLeft{
+	float:left;
+	display: block;
+	bottom:0px;
+}
+
+.BotLeft img{
+	height:200px;
+	width: 200px;
+	border-radius: 100%;
+}
+
+.circle{
+	height:200px;
+	width: 200px;
+	border-radius: 100%;
+}
+.TopRight{
+	float:right;
+	top:0px;
+	display:block;
+}
+
+
+.TopRight img{
+	height:200px;
+	width: 200px;
+	border-radius: 100%;
 }
 
 img{
@@ -25,3 +67,13 @@ img{
 	margin:0 auto;
 
 }
+
+.caption{
+	font-size: 1em;
+	display: inherit;
+	position: relative;
+	float: inherit;
+	top:inherit;
+	bottom:inherit;
+}
+
