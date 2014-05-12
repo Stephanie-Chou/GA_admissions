@@ -1,5 +1,5 @@
 body{
-	font-family: 'Cagliostro', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	background:#000;
 	color:#fff;
 }
@@ -19,7 +19,7 @@ h2{
 }
 
 p{
-	font-size: 1.666em;
+	font-size: 1.33em;
 
 }
 
@@ -91,6 +91,10 @@ img{
 }
 #slideshow img{
 	height:300px;
+}
+
+#slideshow button{
+	display:inline-block;
 }
 .item{
 	visibility: hidden;
