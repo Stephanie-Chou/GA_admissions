@@ -4,7 +4,11 @@
 	<title>about me</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js">  </script>
 </head>
+
+
 
 <body>
 	<div class="wrapper">
@@ -18,10 +22,49 @@
 	<h1> About Me </h1>
 	<p> I studied Electrical Engineering at the University of Illinois, Urbana-Champaign (I'm about to graduate!) When I was younger, I wanted to be a paleontologist and could give my family a personalized tour of the dinosaur exhibits at the Chicago Field Museum. I eventually decided to pursue a degree in engineering because I believed the idea that engineers can 'do anything.' I spend my free time designing and redesigning websites and applying for jobs all while listening to Harry Potter audiobooks (read by the great Jim Dale) with unhealthy repetition.</p>
 	<div class=".imgMe"><img src="../GA_admissions/images/stephanie2_med.png" height="300px"></div>
+	<p>Contact me at stephanie.chou@outlook.com</p>
+
+	<button>next</button>
+
+	<div id="slideshow"></div>
+
+
 	<div class="BotLeft circle">
 		<img src="../GA_admissions/images/beachLR.jpeg">
 		<div class="caption">walking on the beach</div>
 	</div>
 	</div>
+
+<script>
+
+
+	var slides=[
+		'<img src="../GA_admissions/images/arches.jpg">',
+		'<img src="../GA_admissions/images/sanfran.jpg">',
+		'<img src="../GA_admissions/images/vailMountain.jpg">'];
+
+	var currentSlide=0;
+
+
+
+	var changeSlide = function(){
+		if (currentSlide<slides.length){
+			$('#slideshow').empty();
+			$("#slideshow").append(slides[currentSlide]);
+			currentSlide=currentSlide+1;
+		}
+		else{
+			currentSlide=0;
+		}
+	}
+		
+ 	$( "button" ).click(function() {
+		changeSlide();
+	});
+
+</script>
+
+	
 </body>
+
 </html>

@@ -77,3 +77,25 @@ img{
 	bottom:inherit;
 }
 
+
+
+/*slideshow*/
+
+#slideshow {
+	width:100%;
+	height:500px;
+}
+
+.slideshow-content{
+	height: inherit;
+}
+#slideshow img{
+	height:300px;
+}
+.item{
+	visibility: hidden;
+}
+.item-active{
+	visibility: visible;
+}
+
