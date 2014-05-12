@@ -23,11 +23,17 @@
 	<div class=".imgMe"><img src="../GA_admissions/images/stephanie2_med.png" height="300px"></div>
 	<p>Contact me at stephanie.chou@outlook.com</p>
 
-	<button id="next">next</button>
-		
-	<button id="past">past</button>
+
+	<h2>Places I've Been</h2>
+	
+
 	<div id="slideshow">
-		<img src="../GA_admissions/images/arches.jpg">
+		<button id="next">next</button>	
+		<button id="past">past</button>
+		<div class="slideshow-content">
+			<img src="../GA_admissions/images/arches.jpg">
+			<p>Arches National Park, UT</p>
+		</div>
 	</div>
 
 
@@ -44,8 +50,11 @@
 		'<img src="../GA_admissions/images/arches.jpg">',
 		'<img src="../GA_admissions/images/sanfran.jpg">',
 		'<img src="../GA_admissions/images/vailMountain.jpg">'];
-	/*var caption=[
-		];*/
+	var caption=[
+		'Arches National Park, UT',
+		'San Fransisco, CA',
+		'Vail Mountain, CO'
+		];
 
 	var currentSlide=0;
 
@@ -59,9 +68,9 @@
 		else{
 			currentSlide=0;
 		}
-		$('#slideshow').empty();
-		$("#slideshow").append(slides[currentSlide]+currentSlide);
-		$("#slideshow").fadeTo("slow",1);	
+		$('.slideshow-content').empty();
+		$(".slideshow-content").append(slides[currentSlide]+'<p>'+caption[currentSlide]+'</p>');
+		$(".slideshow-content").fadeTo("slow",1);	
 	}
 	
 	var changeSlidePast = function(){
@@ -72,9 +81,9 @@
 			currentSlide=currentSlide-1;
 		}
 
-			$('#slideshow').empty();
-			$("#slideshow").append(slides[currentSlide]+currentSlide);
-			$("#slideshow").fadeTo("slow",1);
+			$('.slideshow-content').empty();
+			$(".slideshow-content").append(slides[currentSlide]+'<p>'+caption[currentSlide]+'</p>');
+			$(".slideshow-content").fadeTo("slow",1);
 	}
 
 
