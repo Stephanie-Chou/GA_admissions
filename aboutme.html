@@ -68,9 +68,14 @@
 		else{
 			currentSlide=0;
 		}
-		$('.slideshow-content').empty();
-		$(".slideshow-content").append(slides[currentSlide]+'<p>'+caption[currentSlide]+'</p>');
-		$(".slideshow-content").fadeTo("slow",1);	
+			$('.slideshow-content').fadeOut("slow", function(){
+				$('.slideshow-content').empty();
+				$(".slideshow-content").append(slides[currentSlide]+'<p>'+caption[currentSlide]+'</p>');
+				$(".slideshow-content").fadeIn("slow");
+			});
+			
+			
+		
 	}
 	
 	var changeSlidePast = function(){
