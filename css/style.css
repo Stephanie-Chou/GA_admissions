@@ -21,8 +21,7 @@ body{
 
 .navigation{
 	width: 100%;
-	height: 200px;
-	background-color:#4e5e00;
+
 }
 
 .navigation li{
@@ -46,14 +45,17 @@ ul{
 
 li{
 	display: inline;
-	border: 2px solid #fff;
+	border: 2px solid #000;
 	border-style: none solid none none;
 	padding: 0 5px;
 }
 a {
-	color: #fff;
+	color: #000;
 }
 
+a:hover{
+	color: #4e5e00;
+}
 h1{
 	font-size: 4em;
 	text-align: center;
