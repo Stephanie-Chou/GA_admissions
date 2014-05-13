@@ -10,38 +10,42 @@
 
 
 <body>
-	<div class="wrapper">
 	<div class="TopRight">
-		
-		<img src="../GA_admissions/images/beachbirdsLR.jpeg">
+				<img src="../GA_admissions/images/beachbirdsLR.jpeg">
+				<div class="caption">birds on the beach</div>
+			</div>
+		<div id="about" class="wrapper">
+			<div class="margin">
+			
 
-		<div class="caption">birds on the beach</div>
-
-	</div>
-	<h1> About Me </h1>
-	<p> I studied Electrical Engineering at the University of Illinois, Urbana-Champaign (I'm about to graduate!) When I was younger, I wanted to be a paleontologist and could give my family a personalized tour of the dinosaur exhibits at the Chicago Field Museum. I eventually decided to pursue a degree in engineering because I believed the idea that engineers can 'do anything.' I spend my free time designing and redesigning websites and applying for jobs all while listening to Harry Potter audiobooks (read by the great Jim Dale) with unhealthy repetition.</p>
-	<div class=".imgMe"><img src="../GA_admissions/images/stephanie2_med.png" height="300px"></div>
-	<p>Contact me at stephanie.chou@outlook.com</p>
-
-
-	<h2>Places I've Been</h2>
+	
+			<h1> About Me </h1>
+			<p> I studied Electrical Engineering at the University of Illinois, Urbana-Champaign (I'm about to graduate!) When I was younger, I wanted to be a paleontologist and could give my family a personalized tour of the dinosaur exhibits at the Chicago Field Museum. I eventually decided to pursue a degree in engineering because I believed the idea that engineers can 'do anything.' I spend my free time designing and redesigning websites and applying for jobs all while listening to Harry Potter audiobooks (read by the great Jim Dale) with unhealthy repetition.</p>
+			<p>Contact me at stephanie.chou@outlook.com</p>
+			<div class="imgMe"><img src="../GA_admissions/images/stephanie2_med.png" height="300px"></div>
+		</div>
+		</div>
+	
+	
+		<div id="places" class="wrapper">
+		<div class="margin">
+			<h2>Places I've Been</h2>
 	
 
-	<div id="slideshow">
-		<button id="next">next</button>	
-		<button id="past">past</button>
-		<div class="slideshow-content">
-			<img src="../GA_admissions/images/arches.jpg">
-			<p>Arches National Park, UT</p>
+			<div id="slideshow">
+				<button id="next">next</button>	
+				<button id="past">past</button>
+				<div class="slideshow-content">
+					<img src="../GA_admissions/images/arches.jpg">
+					<p>Arches National Park, UT</p>
+				</div>
+			</div>
 		</div>
-	</div>
-
-
-	<div class="BotLeft circle">
-		<img src="../GA_admissions/images/beachLR.jpeg">
-		<div class="caption">walking on the beach</div>
-	</div>
-	</div>
+		</div>
+		<div class="BotLeft">
+				<img src="../GA_admissions/images/beachLR.jpeg">
+				<div class="caption">walking on the beach</div>
+			</div>
 
 <script>
 
@@ -86,9 +90,11 @@
 			currentSlide=currentSlide-1;
 		}
 
-			$('.slideshow-content').empty();
-			$(".slideshow-content").append(slides[currentSlide]+'<p>'+caption[currentSlide]+'</p>');
-			$(".slideshow-content").fadeTo("slow",1);
+			$('.slideshow-content').fadeOut("slow", function(){
+				$('.slideshow-content').empty();
+				$(".slideshow-content").append(slides[currentSlide]+'<p>'+caption[currentSlide]+'</p>');
+				$(".slideshow-content").fadeIn("slow");
+			});
 	}
 
 
