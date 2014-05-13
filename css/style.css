@@ -2,20 +2,32 @@
 body{
 	font-family: 'PT Sans', sans-serif;
 	background:#000;
-	color:#fff;
+	color:#908b90;
 	padding: 0px;
 	margin:0px;
 }
 
 .header{
-	height: 300px;
 	width: 100%;
-	background-image: url("../images/turkeyrun.jpg");
+	height: 600px;
+	background: linear-gradient(
+      rgba(22, 10, 22, 0.75), 
+      rgba(22, 10, 22, 0.75)
+    ),url("../images/EngHallLR.png");
 	background-repeat: no-repeat;
 	background-size:cover;
 	position: fixed;
-	top:0px;
+	top: -100px;
 	z-index: -1;
+
+}
+
+span{
+	width: 100%;
+	top:200px;
+	position: absolute;
+	text-align: center;
+	
 }
 
 .wrapper{
@@ -29,7 +41,7 @@ body{
 	right: 0px;
 	margin:0px;
 	padding: 0px;
-	border: 1px solid #650d65;
+	border: 1px solid #160a16;
 	border-style: solid none;
 }
 
@@ -44,7 +56,7 @@ body{
 	top:0px;
 	left: 0px;
 	position: fixed;
-	background-color: #000;
+	background-color:  #160a16;
 	margin:0px;
 	padding:0px;
 	/*border-radius: 10px;
@@ -82,19 +94,28 @@ li{
 	
 }
 a {
-	color: #fff;
+	color: #908b90;
 }
 
 a:hover{
-	color: #a4b943;
+	color: #fff;
+
 }
 h1{
-	font-size: 4em;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 4.66em;
 	text-align: center;
 }
 
 h2{
+	
 	font-size: 3em;
+	text-align: center;
+}
+
+h3{
+	
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -103,22 +124,26 @@ p{
 
 }
 
-
+strong{
+	font-weight: bold;
+}
 
 
 #about{
-	background-color: #290029;
-	background-image:url("http://api.thumbr.it/whitenoise-100x100.png?background=290029ff&noise=626262&density=75&opacity=25");
-	background-repeat: repeat;
-	padding: 5px;
 	margin-top: 300px;
-	
-
 }
 
-#places{
-	background-color: #320032;
-	background-image:url("http://api.thumbr.it/whitenoise-100x100.png?background=320032ff&noise=626262&density=75&opacity=25");
+#places{}
+#experience{}
+.panel-solid{
+	background-color: #211f21;
+	/*background-image:url("http://api.thumbr.it/whitenoise-100x100.png?background=211f21ff&noise=626262&density=75&opacity=25");*/
+	background-repeat: repeat;
+	padding: 5px;
+}
+.panel-texture{
+	background-color: #31312f;
+	background-image:url("http://api.thumbr.it/whitenoise-100x100.png?background=31312fff&noise=626262&density=75&opacity=25");
 	background-repeat: repeat;
 	padding: 5px;
 }
@@ -172,7 +197,7 @@ img{
 	position: relative;
 	top:inherit;
 	bottom:inherit;
-	color: #000;
+	color: #fff;
 	text-align: center;
 }
 

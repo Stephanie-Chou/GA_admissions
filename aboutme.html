@@ -4,43 +4,42 @@
 	<title>about me</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="js/jquery-1.10.1.min.js">  </script>
 </head>
 
 		
 		
-	<div class="header">
-		
-	</div>
+	<div class="header"><span><h1>Stephanie Chou</h1></span></div>
 
 
 	<ul class="navigation">
 		<li><a href="#about">About Me</a></li>
 		<li><a href="#places">Places I've Been</a></li>
-	</ul>
-<body>
-
-
-	<div class="TopRight">
-		<img src="../GA_admissions/images/beachbirdsLR.jpeg">
+		<li><a href="#experience">Experience</a></li>
+		<div class="TopRight">
+			<img src="../GA_admissions/images/beachbirdsLR.jpeg">
 		<div class="caption">birds on the beach</div>
 	</div>
+	</ul>
+	
 
+<body>
 		
-		<div id="about" class="container">
-			<div class="margin">
+	<div id="about" class="panel-solid container">
+		<div class="margin">
 			
 
 	
-			<h1> About Me </h1>
+		<h2> About Me </h2>
 			<p> I studied Electrical Engineering at the University of Illinois, Urbana-Champaign (I'm about to graduate!) When I was younger, I wanted to be a paleontologist and could give my family a personalized tour of the dinosaur exhibits at the Chicago Field Museum. I eventually decided to pursue a degree in engineering because I believed the idea that engineers can 'do anything.' I spend my free time designing and redesigning websites and applying for jobs all while listening to Harry Potter audiobooks (read by the great Jim Dale) with unhealthy repetition.</p>
 			<p>Contact me at stephanie.chou@outlook.com</p>
 			<div class="imgMe"><img src="../GA_admissions/images/stephanie2_med.png" height="300px"></div>
 		</div>
-		</div>
+	</div>
 	
 	
-		<div id="places" class="container">
+	<div id="places" class="panel-texture container">
 		<div class="margin">
 			<h2>Places I've Been</h2>
 	
@@ -54,11 +53,28 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div  id="experience" class="panel-solid container">
+		<div class="margin">
+			<h2> Experience </h2>
+			<h3> 2014</h3>
+			<p> HackIllinois, Hardware Director</p>
+			<p> Hands Across the Sea Haiti, Dev Team</p>
+			<h3> 2013</h3>
+			<p> Eaton Corporation, Engineering and Technology Leadership Intern</p>
+			<p> Engineering 100, Head Engineering Learning Assistant</p>
+			<h3> 2012</h3>
+			<p> Lost Points LLC, Software Project Manager</p>
+			<p> Engineering 100, Engineering Learning Assistant</p>
+			
 		</div>
-		<div class="BotLeft">
-				<img src="../GA_admissions/images/beachLR.jpeg">
-				<div class="caption">walking on the beach</div>
-			</div>
+	</div>
+
+	<div class="BotLeft">
+		<img src="../GA_admissions/images/beachLR.jpeg">
+		<div class="caption">walking on the beach</div>
+	</div>
 
 <script>
 
@@ -66,11 +82,13 @@
 	var slides=[
 		'<img src="../GA_admissions/images/arches.jpg">',
 		'<img src="../GA_admissions/images/sanfran.jpg">',
-		'<img src="../GA_admissions/images/vailMountain.jpg">'];
+		'<img src="../GA_admissions/images/vailMountain.jpg">',
+		'<img src="../GA_admissions/images/turkeyrun.jpg">'];
 	var caption=[
 		'Arches National Park, UT',
 		'San Francisco, CA',
-		'Vail Mountain, CO'
+		'Vail Mountain, CO',
+		'Turkey Run State Park, IN'
 		];
 
 	var currentSlide=0;
@@ -119,8 +137,7 @@
 	});
 
 </script>
-
-	
 </body>
+
 
 </html>
