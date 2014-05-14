@@ -50,25 +50,27 @@ span{
 	margin: 0px auto;	
 }
 
+/*navigation*/
+
 .navigation{
 	width: 100%;
-	height:60px;
+	height:40px;
 	top:0px;
 	left: 0px;
 	position: fixed;
 	background-color:  #160a16;
 	margin:0px;
 	padding:0px;
-	/*border-radius: 10px;
-	box-shadow: 5px #79727b;*/
+	/*border-radius: 10px;*/
+	box-shadow: 5px 5px 5px #79727b;
 	z-index: 999;
 }
 
 .navigation li{
-	font-size: 1.666em;
+	font-size: 1.33em;
 	border: 2px solid #fff;
 	border-style: none solid none none;
-	padding: 15px;
+	padding: 10px;
 }
 
 .navigation ul{
@@ -83,6 +85,9 @@ span{
 	float: right;
 	position: absolute;
 }
+
+
+/*basic styles*/
 
 ul{
 	
@@ -129,15 +134,18 @@ strong{
 }
 
 
+/*panels*/
+
 #about{
-	margin-top: 300px;
+	margin-top: 400px;
 }
 
 #places{}
 #experience{}
 .panel-solid{
 	background-color: #211f21;
-	/*background-image:url("http://api.thumbr.it/whitenoise-100x100.png?background=211f21ff&noise=626262&density=75&opacity=25");*/
+
+	background-image:url("http://api.thumbr.it/whitenoise-100x100.png?background=211f21ff&noise=626262&density=75&opacity=5");
 	background-repeat: repeat;
 	padding: 5px;
 }
@@ -207,7 +215,7 @@ img{
 
 #slideshow {
 	height:400px;
-	background-color: #000;
+	background-color: #160a16;
 	margin:0px auto;
 	margin-bottom: 30px;
 	border-style: 1px solid #fff;
@@ -224,18 +232,24 @@ img{
 
 .slideshow-content p{
 	height: 10%;
-	background-color: #000;
-	opacity: .6;
+	background-color: #160a16;
+	opacity: .7;
 	padding:5px;
-	margin-top: -40px;
+	margin-top: -50px;
 	text-align: center;
 }
 
 #slideshow button{
 	display:inline-block;
 	background-color: #000;
-	color:#fff;
-	border-radius: 30px;
+	color:#908b90;
+	border-radius: 30%;
+	border:1px solid #908b90;
+}
+
+#slideshow button:hover{
+	background-color: #f2f2f2;
+	color: #160a16;
 }
 
 
